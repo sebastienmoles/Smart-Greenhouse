@@ -5,26 +5,30 @@
 #include <stdio.h>
 #include <string.h>
 
-extern uint8_t aRxBuffer[7];
+extern uint8_t aRxBuffer[1];
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
+	uint8_t erreur_commande[16] = "Erreur Commande/";
 	
 	switch (aRxBuffer[0])
 	{
-		case 0x30 :
+		case 0x74 :
 			uart_transmit(Humi_temp_t.string_temp);
 			break;
-		case 0x31 :
+		case 0x68 :
 			uart_transmit(Humi_temp_t.string_hum);
 		break;
-		case 0x32 :
+		case 0x73 :
 			get_value_hum_sol();
 			uart_transmit(humidite_sol_t.string_hum_sol);
 			break;
+		default:
+			uart_transmit(erreur_commande);
+			break;
 	}
 	
-	HAL_UART_Receive_IT(&huart1, (uint8_t *)aRxBuffer, 7);
+	HAL_UART_Receive_IT(&huart1, (uint8_t *)aRxBuffer, 1);
 }
 
 void uart_transmit(uint8_t *pData)

@@ -640,7 +640,7 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h)(0x5C4ED225)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h)(0x5C4ED225)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x5C4ED225)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x5C4ED225)
-F (../Src/main.c)(0x5C5D8D62)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_STCubeGenerated-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F303x8 -DUSE_HAL_DRIVER -DSTM32F303x8-o stcubegenerated\main.o --omf_browse stcubegenerated\main.crf --depend stcubegenerated\main.d)
+F (../Src/main.c)(0x5C63277F)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_STCubeGenerated-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F303x8 -DUSE_HAL_DRIVER -DSTM32F303x8-o stcubegenerated\main.o --omf_browse stcubegenerated\main.crf --depend stcubegenerated\main.d)
 I (../Inc/main.h)(0x5C5C35F8)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x5C4ED225)
 I (../Inc/stm32f3xx_hal_conf.h)(0x5C5C35F8)
@@ -709,7 +709,7 @@ I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h)(0x5C4ED225)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h)(0x5C4ED225)
 I (../Inc/stm32f3xx_it.h)(0x5C5C35F7)
 F (..\Inc\uart.h)(0x5C5C1072)()
-F (..\Src\uart.c)(0x5C5C49CA)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_STCubeGenerated-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F303x8 -DUSE_HAL_DRIVER -DSTM32F303x8-o stcubegenerated\uart.o --omf_browse stcubegenerated\uart.crf --depend stcubegenerated\uart.d)
+F (..\Src\uart.c)(0x5C63286F)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc -I ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_STCubeGenerated-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include-D__UVISION_VERSION="526" -D_RTE_ -DSTM32F303x8 -DUSE_HAL_DRIVER -DSTM32F303x8-o stcubegenerated\uart.o --omf_browse stcubegenerated\uart.crf --depend stcubegenerated\uart.d)
 I (../Inc/uart.h)(0x5C5C1072)
 I (../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h)(0x5C4ED225)
 I (../Inc/stm32f3xx_hal_conf.h)(0x5C5C35F8)

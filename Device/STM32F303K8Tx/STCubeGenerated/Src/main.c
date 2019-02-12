@@ -56,7 +56,7 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-uint8_t aRxBuffer[7];
+uint8_t aRxBuffer[1];
 Data_Capteur_Humi_Temp Humi_temp_t;
 humidite_sol humidite_sol_t;
 
@@ -110,7 +110,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	init_uart_IT();
 	calib_hum_sol();
-	HAL_UART_Receive_IT(&huart1, (uint8_t *)aRxBuffer, 7);
+	HAL_UART_Receive_IT(&huart1, (uint8_t *)aRxBuffer, 1);
 
   /* USER CODE END 2 */
 
