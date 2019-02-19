@@ -29,5 +29,7 @@ stcubegenerated\stm32f3xx_hal_pwr.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3
 stcubegenerated\stm32f3xx_hal_pwr.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c_ex.h
 stcubegenerated\stm32f3xx_hal_pwr.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h
 stcubegenerated\stm32f3xx_hal_pwr.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h
+stcubegenerated\stm32f3xx_hal_pwr.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h
+stcubegenerated\stm32f3xx_hal_pwr.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h
 stcubegenerated\stm32f3xx_hal_pwr.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h
 stcubegenerated\stm32f3xx_hal_pwr.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h

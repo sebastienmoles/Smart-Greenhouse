@@ -338,7 +338,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F303x8</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;  ../Drivers/STM32F3xx_HAL_Driver/Inc;  ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;  ../Drivers/CMSIS/Device/ST/STM32F3xx/Include;  ../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Inc;   ../Drivers/STM32F3xx_HAL_Driver/Inc;   ../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy;   ../Drivers/CMSIS/Device/ST/STM32F3xx/Include;   ../Drivers/CMSIS/Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -541,6 +541,16 @@
               <FileName>adc.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Inc\adc.h</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\pwm.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\pwm.h</FilePath>
             </File>
           </Files>
         </Group>
