@@ -2,6 +2,7 @@
 #include "stm32f3xx_it.h"
 #include "i2c.h"
 #include "adc.h"
+#include "pwm.h"
 #include <stdio.h>
 #include <string.h>
 

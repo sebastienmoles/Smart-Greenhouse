@@ -5,8 +5,8 @@
 #include "main.h"
  
 
+extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim2;
-extern TIM_HandleTypeDef htim3;
 
 void start_pwm(void);
 

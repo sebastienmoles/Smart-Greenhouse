@@ -2,23 +2,25 @@
 
 void start_pwm(void)
 {
-	HAL_TIM_Base_Start(&htim2);
-	HAL_TIM_Base_Start(&htim3);
+
+	__HAL_RCC_TIM1_CLK_ENABLE();
+	__HAL_RCC_TIM2_CLK_ENABLE();
 	
-	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
-	
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+			
 	HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
 	HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
 	HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
+	
 }
 
 void pwm_chauffage(uint16_t duty_cycle)
 {
-	__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1,duty_cycle);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,duty_cycle);
 }
 
 void pwm_ventilateur(uint16_t duty_cycle)
 {
-	__HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2,duty_cycle);
+	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,duty_cycle);
 }
