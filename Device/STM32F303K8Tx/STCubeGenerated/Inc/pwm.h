@@ -13,5 +13,9 @@ void start_pwm(void);
 void pwm_chauffage(uint16_t duty_cycle);
 void pwm_ventilateur(uint16_t duty_cycle);
 
+void pwm_LED_R(uint16_t duty_cycle);
+void pwm_LED_G(uint16_t duty_cycle);
+void pwm_LED_B(uint16_t duty_cycle);
+
 
 #endif

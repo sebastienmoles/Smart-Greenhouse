@@ -38,4 +38,5 @@ stcubegenerated\uart.o: ../Inc/stm32f3xx_it.h
 stcubegenerated\uart.o: ../Inc/i2c.h
 stcubegenerated\uart.o: ../Inc/adc.h
 stcubegenerated\uart.o: ../Inc/pwm.h
+stcubegenerated\uart.o: ../Inc/gestion.h
 stcubegenerated\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

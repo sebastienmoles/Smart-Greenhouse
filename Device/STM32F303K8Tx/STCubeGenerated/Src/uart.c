@@ -3,6 +3,7 @@
 #include "i2c.h"
 #include "adc.h"
 #include "pwm.h"
+#include "gestion.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -23,6 +24,12 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 		case 0x73 :
 			get_value_hum_sol();
 			uart_transmit(humidite_sol_t.string_hum_sol);
+			break;
+		case 0x6F :
+			eclairage_ON();
+			break;
+		case 0x66 :
+			eclairage_OFF();
 			break;
 		default:
 			uart_transmit(erreur_commande);

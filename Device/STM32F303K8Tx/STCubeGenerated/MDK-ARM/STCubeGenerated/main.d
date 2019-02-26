@@ -37,3 +37,4 @@ stcubegenerated\main.o: ../Inc/uart.h
 stcubegenerated\main.o: ../Inc/i2c.h
 stcubegenerated\main.o: ../Inc/adc.h
 stcubegenerated\main.o: ../Inc/pwm.h
+stcubegenerated\main.o: ../Inc/gestion.h

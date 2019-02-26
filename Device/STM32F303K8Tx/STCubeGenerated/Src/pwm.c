@@ -24,3 +24,18 @@ void pwm_ventilateur(uint16_t duty_cycle)
 {
 	__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_4,duty_cycle);
 }
+
+void pwm_LED_R(uint16_t duty_cycle)
+{
+	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_3,duty_cycle);
+}
+
+void pwm_LED_G(uint16_t duty_cycle)
+{
+	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1,duty_cycle);
+}
+
+void pwm_LED_B(uint16_t duty_cycle)
+{
+	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_2,duty_cycle);
+}
