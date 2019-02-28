@@ -18,7 +18,7 @@ void recup_hum_temp_capteur (Data_Capteur_Humi_Temp *monPointeur)
 	monPointeur->temperature = (((temp / 16382) * 165) - 40);
 	monPointeur->humidite = ((hum / 16382) * 100);
 	
-	sprintf((char*)monPointeur->string_temp, "%.1f Degre Celsius/", monPointeur->temperature);
-	sprintf((char*)monPointeur->string_hum , "%.0f Pourcent/", monPointeur->humidite);
+	sprintf((char*)monPointeur->string_temp, "%.1f Degre Celsius\r\n/", monPointeur->temperature);
+	sprintf((char*)monPointeur->string_hum , "%.0f Pourcent\r\n/", monPointeur->humidite);
 	
 }

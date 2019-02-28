@@ -41,11 +41,12 @@
 #include "stm32f3xx_hal.h"
 
 /* USER CODE BEGIN Includes */
+#include "gestion.h"
 #include "uart.h"
 #include "i2c.h"
 #include "adc.h"
 #include "pwm.h"
-#include "gestion.h"
+
 
 /* USER CODE END Includes */
 
@@ -61,10 +62,11 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-uint8_t aRxBuffer[1];
+uint8_t aRxBuffer[2];
 Data_Capteur_Humi_Temp Humi_temp_t;
-humidite_sol humidite_sol_t;
-Consignes_Param Consignes_Param_t;
+T_humidite_sol humidite_sol;
+T_Consignes_Param Consignes_Param = {25,60,50}; // {temperature, Hum.Air, Hum.Sol}
+T_Regulateur_Proportionnel Regulateur_Proportionnel = {0,100,0}; // {erreur, Kp, Commande}
 
 /* USER CODE END PV */
 
@@ -134,7 +136,7 @@ int main(void)
   while (1)
   {
 		recup_hum_temp_capteur(&Humi_temp_t);
-		HAL_Delay(500);
+		HAL_Delay(10);
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */

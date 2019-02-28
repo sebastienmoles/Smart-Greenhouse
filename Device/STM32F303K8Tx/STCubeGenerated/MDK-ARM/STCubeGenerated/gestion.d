@@ -36,3 +36,6 @@ stcubegenerated\gestion.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uar
 stcubegenerated\gestion.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
 stcubegenerated\gestion.o: ../Inc/i2c.h
 stcubegenerated\gestion.o: ../Inc/adc.h
+stcubegenerated\gestion.o: ../Inc/pwm.h
+stcubegenerated\gestion.o: ../Inc/uart.h
+stcubegenerated\gestion.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

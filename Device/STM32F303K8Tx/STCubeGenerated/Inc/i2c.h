@@ -11,8 +11,8 @@ typedef struct Data_Capteur_Humi_Temp
 {
 	
 	float temperature;
-	float humidite;
 	uint8_t string_temp[20];
+	float humidite;
 	uint8_t string_hum[20];
 	
 }Data_Capteur_Humi_Temp;

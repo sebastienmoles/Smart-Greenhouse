@@ -33,8 +33,8 @@ stcubegenerated\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h
 stcubegenerated\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h
 stcubegenerated\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h
 stcubegenerated\main.o: ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h
+stcubegenerated\main.o: ../Inc/gestion.h
 stcubegenerated\main.o: ../Inc/uart.h
 stcubegenerated\main.o: ../Inc/i2c.h
 stcubegenerated\main.o: ../Inc/adc.h
 stcubegenerated\main.o: ../Inc/pwm.h
-stcubegenerated\main.o: ../Inc/gestion.h

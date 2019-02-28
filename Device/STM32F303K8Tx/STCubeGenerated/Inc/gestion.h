@@ -4,15 +4,25 @@
 #include "stm32f3xx_hal.h"
 #include "main.h"
  
-typedef struct Consignes_Param
+typedef struct
 {
 	float consigne_temperature;
 	float consigne_humidite_air;
 	float consigne_humidite_sol;
 
-}Consignes_Param;
+}T_Consignes_Param;
 
-extern Consignes_Param Consignes_Param_t;
+typedef struct
+{
+	float erreur;
+	uint16_t Kp;
+	uint16_t commande;
+	
+}T_Regulateur_Proportionnel;
+
+extern T_Consignes_Param Consignes_Param;
+
+extern T_Regulateur_Proportionnel Regulateur_Proportionnel;
 
 void gestion_serre(void);
 
@@ -30,5 +40,7 @@ void LED_ROUGE_OFF(void);
 
 void LED_VERTE_ON(void);
 void LED_VERTE_OFF(void);
+
+void Ecriture_Consigne(uint8_t status, uint8_t consigne[2]);
 
 #endif
